@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "7e2d7650-3a58-4ee5-bf3e-a63585d03451",
+		"name": "Kaiburr-springboot-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19439412",
+		"_collection_link": "https://lively-meteor-106223.postman.co/workspace/Rubick~6340c3d1-1f95-45a3-b7ce-66bb626b8884/collection/19439412-7e2d7650-3a58-4ee5-bf3e-a63585d03451?action=share&creator=19439412&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Get Servers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/servers",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"servers"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Servers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5001/servers",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"servers"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Apr 2023 22:21:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"644cbbc4f830f82440922c33\",\n        \"name\": \"Nginx\",\n        \"language\": \"Golang\",\n        \"framework\": \"Nest\"\n    },\n    {\n        \"id\": \"644d2285f5990f339a2301c5\",\n        \"name\": \"New\",\n        \"language\": \"Lang new\",\n        \"framework\": \"New Framework\"\n    },\n    {\n        \"id\": \"644d8956ed7f52513d699b9c\",\n        \"name\": \"Ubuntu\",\n        \"language\": \"Python\",\n        \"framework\": \"DJango\"\n    },\n    {\n        \"id\": \"644d97e97f3d4e1d745d75fb\",\n        \"name\": \"New\",\n        \"language\": \"Lang new\",\n        \"framework\": \"New Framework\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Server",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"New\",\r\n    \"language\": \"Lang new\",\r\n    \"framework\": \"New Framework\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5001/servers",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"servers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Server",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"New\",\r\n    \"language\": \"Lang new\",\r\n    \"framework\": \"New Framework\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/servers",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"servers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 29 Apr 2023 22:21:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"644d98817f3d4e1d745d75fc\",\n    \"name\": \"New\",\n    \"language\": \"Lang new\",\n    \"framework\": \"New Framework\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Edit Server",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"New 1\",\r\n    \"language\": \"Lang new 1\",\r\n    \"framework\": \"New Framework 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6000/servers/6",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"servers",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Server",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:6000/servers/1",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"servers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Servers by Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:6000/servers/search/ne",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"servers",
+						"search",
+						"ne"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
