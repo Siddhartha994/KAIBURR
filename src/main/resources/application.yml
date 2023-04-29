@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://sira:UfsXuqr9XxN1zZWn@cluster0.lfkuab9.mongodb.net/?retryWrites=true&w=majority
+      uri: 
       database: Server
 server:
   port: 5001
